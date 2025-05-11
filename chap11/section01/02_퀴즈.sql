@@ -1,0 +1,10 @@
+-- 간단연습 ) 테이블 복사(EMP_COPY) : 사원 : EMPLOYEE
+CREATE TABLE EMP_COPY
+AS
+SELECT * FROM EMPLOYEE;
+
+-- 간단연습) 테이블 복사 : 데이터는 제외하고 설계만 복사(EMP_COPY2) : 사원 : EMPLOYEE
+CREATE TABLE EMP_COPY2
+AS
+SELECT * FROM EMPLOYEE
+WHERE 1=2;

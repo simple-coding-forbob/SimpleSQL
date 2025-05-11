@@ -1,0 +1,2 @@
+-- 간단연습 : DEPT_COPY2 테이블 삭제하세요
+DROP TABLE DEPT_COPY2;

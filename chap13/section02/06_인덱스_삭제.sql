@@ -1,0 +1,3 @@
+-- 인덱스 삭제하기
+-- 사용법) DROP INDEX 인덱스명;
+DROP INDEX IX_DEPARTMENT_DNAME_LOC;

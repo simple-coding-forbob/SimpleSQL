@@ -1,0 +1,7 @@
+-- 간단연습 : DEPT_COPY 에서 20번(DNO) 부서를 삭제하세요
+DELETE FROM DEPT_COPY
+WHERE DNO = 20;  -- 조건
+
+SELECT * FROM DEPT_COPY;
+
+COMMIT;

@@ -9,8 +9,7 @@ SELECT SYSDATE FROM DUAL;
 
 -- (참고) 테스트용 테이블 : DUAL 
 --  활용 : 간단한 계산, 문자열 출력용 
---    2345 * 5435 + 432
-SELECT 2345 * 5435 + 432 FROM DUAL;
+SELECT 2 * 3 + 4  FROM DUAL;
 
 -- (참고) 문자열 : '' (주의: 홑따옴표임)
 SELECT '홍길동' FROM DUAL;

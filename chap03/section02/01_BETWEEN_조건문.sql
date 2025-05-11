@@ -1,0 +1,22 @@
+-- 예제 6) 예약어 : BETWEEN 
+-- 급여가(SALARY) 1000 과 1500 사이의 사원 조회하기
+SELECT * FROM EMPLOYEE
+WHERE SALARY >= 1000
+AND   SALARY <= 1500;
+
+-- 개선) sql 길이가 김 => BETWEEN 사용(*)
+-- 사용법) SELECT * FROM 테이블명
+--        WHERE 컬럼 BETWEEN 값 AND 값2;
+-- 해석 : 값 ~ 값2 사이의 값만 조회
+SELECT * FROM EMPLOYEE
+WHERE SALARY BETWEEN 1000 AND 1500;
+
+-- 예제 7) NOT BETWEEN : BETWEEN 의 반대값
+-- 급여가(SALARY) 1000 미만이거나 1500 초과인 사원 조회하기
+SELECT * FROM EMPLOYEE
+WHERE SALARY < 1000;
+OR    SALARY > 1500;
+
+-- 급여가(SALARY) 1000 과 1500 사이에 없는 사원 조회하기
+SELECT * FROM EMPLOYEE
+WHERE SALARY NOT BETWEEN 1000 AND 1500;
