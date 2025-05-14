@@ -1,0 +1,15 @@
+-- 예제 2) Sales 부서에 속한 직원들을 이름을 표시하세요
+-- 서브쿼리를 사용하세요.
+SELECT ENAME
+FROM EMPLOYEE E
+WHERE EXISTS (SELECT 1 FROM DEPARTMENT D
+              WHERE D.DNO = E.DNO
+              AND   D.DNAME='SALES'
+);
+
+-- IN 보다 더 빠름
+SELECT ENAME
+FROM EMPLOYEE E
+WHERE DNO IN (SELECT DNO FROM DEPARTMENT D
+              WHERE   D.DNAME='SALES'
+);

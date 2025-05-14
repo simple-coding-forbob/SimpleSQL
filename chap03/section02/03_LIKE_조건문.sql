@@ -7,7 +7,7 @@
 SELECT * FROM EMPLOYEE
 WHERE ENAME LIKE 'F%';
 
--- 예제 11) (참고) 이름의 두번째 글자가 'A' 인 사원 조회하기
+-- 예제 11) 이름의 두번째 글자가 'A' 인 사원 조회하기
 -- LIKE 기호 : % (어떤 문자열을 의미)
 --             _ (어떤 1문자을 의미)
 SELECT * FROM EMPLOYEE

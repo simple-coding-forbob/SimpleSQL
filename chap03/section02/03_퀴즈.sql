@@ -1,10 +1,16 @@
 -- 간단연습 ) 이름에(ENAME) 'M' 이 포함된 사원 조회하기
 -- 힌트 : %문자%
 SELECT * FROM EMPLOYEE
-WHERE ENAME LIKE '%M%';
+WHERE ENAME LIKE 'M%';
 
--- 간단연습 2) 이름이 'N' 으로 끝나는 사원 조회하기(전체 조회)
+-- 예제 11) 이름의 두번째 글자가 'O' 인 사원 조회하기
+-- LIKE 기호 : % (어떤 문자열을 의미)
+--             _ (어떤 1문자을 의미)
+SELECT * FROM EMPLOYEE
+WHERE ENAME LIKE '_O%';
+
+-- 간단연습 2) 이름이 'N' 을 포함하지 않는 사원 조회하기(전체 조회)
 -- 사원 : EMPLOYEE
 -- 힌트 : '%문자'
 SELECT * FROM EMPLOYEE
-WHERE ENAME LIKE '%N';
+WHERE ENAME NOT LIKE '%N%';

@@ -8,11 +8,10 @@ FROM EMPLOYEE
 WHERE COMMISSION IS NOT NULL
 ORDER BY SALARY DESC, COMMISSION DESC;
 
--- 문제 14) 이름(ENAME)의 세번째 문자가 R인 사원의 이름을 표시하세요.
+-- 문제 14) 이름(ENAME)이 S로 시작하는 사원의 이름을 표시하세요.
 -- 사원테이블 : EMPLOYEE
--- 힌트) 컬럼명 LIKE '__문자%'
 SELECT ENAME FROM EMPLOYEE
-WHERE ENAME LIKE '__R%';
+WHERE ENAME LIKE 'S%';
 
 
 -- 문제 15) 이름에(ENAME) A와(1번조건) E를(2번조건) 모두 포함하고 있는(동시조건:교집합) 
