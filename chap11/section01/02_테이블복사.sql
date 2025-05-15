@@ -4,7 +4,7 @@
 -- CREATE TABLE 복사테이블명
 -- AS
 -- SELECT * FROM 원본테이블명;
-
+-- CTAS : 테이블 복사를 줄여서 말합니다.
 CREATE TABLE DEPT_COPY
 AS
 SELECT * FROM DEPARTMENT;
