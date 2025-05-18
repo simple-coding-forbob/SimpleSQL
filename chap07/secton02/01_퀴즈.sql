@@ -3,6 +3,5 @@
 -- 평균 : 버림(절삭)
 SELECT JOB
       , TRUNC(AVG(SALARY))  AS 평균급여
-    --   , ENAME              -- X (일반컬럼)
 FROM EMPLOYEE
 GROUP BY JOB;
