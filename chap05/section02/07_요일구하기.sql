@@ -1,0 +1,4 @@
+
+SELECT SYSDATE
+     ,NEXT_DAY(SYSDATE, '토요일')
+FROM DUAL;

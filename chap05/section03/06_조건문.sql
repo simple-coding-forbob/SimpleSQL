@@ -5,7 +5,7 @@
 --                ,         ,값2, 출력결과2
 --                , ...
 --                , 기본결과)
-SELECT ENAME, DNO
+SELECT DNO
      , DECODE(DNO, 10, '회계부'
                 ,  20, '연구소'
                 ,  30, '판매부'
@@ -14,7 +14,7 @@ SELECT ENAME, DNO
 FROM EMPLOYEE;
 
 -- 예제 ) CASE WHEN 를 이용해서 부서명을 출력하세요
-SELECT ENAME, DNO
+SELECT DNO
      , CASE WHEN DNO=10 THEN '회계부'
             WHEN DNO=20 THEN '연구소'
             WHEN DNO=30 THEN '판매부'
@@ -27,4 +27,4 @@ FROM EMPLOYEE;
 --                   컬럼2=값2 THEN 출력결과2
 --                   ...
 --                   ELSE 기본결과
---         END ㄴㄴㄴ
+--         END 

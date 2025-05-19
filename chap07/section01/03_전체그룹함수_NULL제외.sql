@@ -1,0 +1,5 @@
+-- 예제 3) 사원들의(EMPLOYEE) 상여금(COMMISSION) 총액 출력하기
+-- 사원 : EMPLOYEE
+
+SELECT SUM(COMMISSION) 
+FROM EMPLOYEE;

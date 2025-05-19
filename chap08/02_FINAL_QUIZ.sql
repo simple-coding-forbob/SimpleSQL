@@ -19,6 +19,6 @@ FROM EMPLOYEE;
 --  힌트) 부분집계 : GROUP BY 컬럼명
 SELECT DNO
       ,COUNT(*)             AS 사원수
-      ,ROUND(AVG(SALARY),2) AS 평균급여
+      ,ROUND(AVG(SALARY)) AS 평균급여
 FROM EMPLOYEE
 GROUP BY DNO;
