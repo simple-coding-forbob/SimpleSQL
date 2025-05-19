@@ -1,4 +1,5 @@
 -- 이름 자유롭게 만들기: c## 안붙이기
+ALTER SESSION SET "_ORACLE_SCRIPT"=true;
 
 -- 주석 : CTRL + /
 -- 예제1) 계정만들기
