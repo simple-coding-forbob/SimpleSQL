@@ -1,19 +1,10 @@
--- 5) DEFAULT(기본) 제약조건 : 
--- 정의 : INSERT 할때 NULL 값이 추가되면 대체해서 다른값으로 생성하는 제약조건
 
--- 예제) EMP3 SALARY 컬럼에 DEFAULT(기본) 제약조건 추가하세요(NULL -> 1000)
---         ENO NUMBER(4) (기본키 #2)
---         SALARY NUMBER(7,2) 디폴트 (1000)
 CREATE TABLE EMP3 (
    ENO NUMBER(4),
-   SALARY NUMBER(7,2) CONSTRAINT DE_EMP3_SALARY DEFAULT 1000
+   SALARY NUMBER(7,2) DEFAULT 1000
 );
 
 -- INSERT 테스트 
--- 주의점) 명시적으로 NULL 값을 넣으면 동작하지 않음
--- INSERT INTO EMP3(ENO, SALARY)
--- VALUES(8000,NULL);
-
 INSERT INTO EMP3(ENO)
 VALUES(8000);
 
