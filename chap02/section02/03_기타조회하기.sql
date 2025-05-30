@@ -10,9 +10,3 @@ SELECT SYSDATE FROM DUAL;
 -- (참고) 테스트용 테이블 : DUAL 
 --  활용 : 간단한 계산, 문자열 출력용 
 SELECT 2 * 3 + 4  FROM DUAL;
-
--- (참고) 문자열 : '' (주의: 홑따옴표임)
-SELECT '홍길동' FROM DUAL;
-
--- 참고) 테이블의 컬럼(열)을 조회하는데,같은것을 여러번 조회도 가능
-SELECT ENAME, ENAME,ENAME FROM EMPLOYEE;
