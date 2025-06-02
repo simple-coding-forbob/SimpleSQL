@@ -21,12 +21,10 @@ ORDER BY ENAME;
 
 -- 문제 11) 1981년도에 입사한 사원의 이름(ENAME)과 
 --         입사일(HIREDATE)을 출력하세요
--- 단, LIKE 연산자와 와일드카드(%, _)를 사용하세요
--- 힌트 : 컬럼명 LIKE '81%'
 -- 사원테이블 : EMPLOYEE
 SELECT ENAME, HIREDATE
 FROM EMPLOYEE
-WHERE HIREDATE LIKE '81%';
+WHERE HIREDATE BETWEEN '81/01/01' AND '81/12/31';
 
 -- 문제 12) 관리자가(MANAGER) 없는 사원의 이름(ENAME)과 
 --         담당 업무를(JOB) 출력하세요

@@ -8,9 +8,3 @@ WHERE ENAME LIKE 'M%';
 --             _ (어떤 1문자을 의미)
 SELECT * FROM EMPLOYEE
 WHERE ENAME LIKE '_O%';
-
--- 간단연습 2) 이름이 'N' 을 포함하지 않는 사원 조회하기(전체 조회)
--- 사원 : EMPLOYEE
--- 힌트 : '%문자'
-SELECT * FROM EMPLOYEE
-WHERE ENAME NOT LIKE '%N%';

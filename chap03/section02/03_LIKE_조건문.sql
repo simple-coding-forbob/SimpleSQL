@@ -12,9 +12,3 @@ WHERE ENAME LIKE 'F%';
 --             _ (어떤 1문자을 의미)
 SELECT * FROM EMPLOYEE
 WHERE ENAME LIKE '_A%';
-
--- 예제 12) (참고) NOT LIKE : LIKE 부정
--- 이름에 'A' 가 포함되지 않는 사원 조회
--- SQL : 부정 => 속도가 느림
-SELECT * FROM EMPLOYEE
-WHERE ENAME NOT LIKE '%A%';
