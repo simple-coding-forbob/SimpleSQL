@@ -1,6 +1,6 @@
 -- 문제5) 급여가(SALARY) 2000을 넘는 사원의 이름과(ENAME) 급여를 
 --       급여가 많은 것부터 작은 순으로 출력하세요(내림차순)
--- 사원테이블 : EMPLOYEE
+-- 사원테이블 : EMPLOYEE사원 테이블명
 -- 힌트) 급여 > 2000
 SELECT ENAME, SALARY
 FROM EMPLOYEE

@@ -1,2 +1,2 @@
 -- (참고) 테이블 설계(구조) 보는 명령어 :
-DESC DEPT_COPY;
+DESC DEPT;
