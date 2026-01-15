@@ -4,3 +4,4 @@
 --    1-2) 테이블,인덱스,함수등을 사용할수 있는 권한집합 : RESOURCE 
 --    1-3) View 생성 권한 : CREATE VIEW 권한
 GRANT CONNECT, RESOURCE, CREATE VIEW TO user01;
+GRANT UNLIMITED TABLESPACE TO SCOTT;
